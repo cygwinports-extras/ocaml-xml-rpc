@@ -1,0 +1,5 @@
+category: OCaml Net
+requires: ocaml ocaml-annexlib ocaml-equeue ocaml-http ocaml-netclient ocaml-netstring ocaml-pcre ocaml-pxp
+sdesc: "OCaml XML-RPC client and server"
+ldesc: "OCaml XML-RPC is an XML-RPC client and server for OCaml, using 
+an ad-hoc interface definition language and IDL compiler."

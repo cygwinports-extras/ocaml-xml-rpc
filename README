@@ -1,0 +1,77 @@
+ocaml-xml-rpc
+------------------------------------------
+OCaml XML-RPC is an XML-RPC client and server for OCaml, using an ad-hoc 
+interface definition language and IDL compiler.
+
+Runtime requirements:
+  ocaml-3.10.0-1
+  ocaml-annexlib-0.13.2-1
+  ocaml-equeue-2.2.9-1
+  ocaml-http-0.1.3-1
+  ocaml-netclient-2.2.9-1
+  ocaml-netstring-2.2.9-1
+  ocaml-pcre-5.12.2-1
+  ocaml-pxp-1.1.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://ocaml-xml-rpc.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/ocaml-xml-rpc/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-xml-rpc-0.2.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-xml-rpc-0.2.3-X.cygport all
+
+This will create:
+  /usr/src/ocaml-xml-rpc-0.2.3-X-src.tar.bz2
+  /usr/src/ocaml-xml-rpc-0.2.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/xmlrpc/META
+  /usr/lib/ocaml/3.10/xmlrpc/cgiSource.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/cgiSource.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCClient.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCClient.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCDtd.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCDtd.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCNet.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCNet.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCServer.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCServer.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCTypes.cmi
+  /usr/lib/ocaml/3.10/xmlrpc/xmlRPCTypes.mli
+  /usr/lib/ocaml/3.10/xmlrpc/xmlrpc.a
+  /usr/lib/ocaml/3.10/xmlrpc/xmlrpc.cma
+  /usr/lib/ocaml/3.10/xmlrpc/xmlrpc.cmxa
+  /usr/share/doc/ocaml-xml-rpc-0.2.3/COPYING
+  /usr/share/doc/ocaml-xml-rpc-0.2.3/COPYING.LIB
+  /usr/share/doc/ocaml-xml-rpc-0.2.3/README
+
+------------------
+
+Port Notes:
+
+----- version 0.2.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

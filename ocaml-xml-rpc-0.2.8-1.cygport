@@ -1,0 +1,17 @@
+inherit ocaml
+
+DESCRIPTION="OCaml XML-RPC library"
+HOMEPAGE="http://ocaml-xml-rpc.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -j1 all opt httpdall httpdopt
+}
+
+src_install() {
+	cd ${B}
+	ocaml_install BINDIR=${D}/usr/bin
+	mv ${D}/usr/bin/oxridl{,.exe}
+}
